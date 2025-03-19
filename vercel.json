@@ -1,0 +1,15 @@
+{
+  "functions": {
+    "*.go": {
+      "runtime": "go1.x",
+      "memory": 512,
+      "maxDuration": 10
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
