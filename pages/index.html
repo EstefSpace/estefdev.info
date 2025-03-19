@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>{{ .title }}</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+        />
+        <link rel="stylesheet" href="/assets/global.css" />
+        <link rel="icon" href="/assets/favicon.png" />
+    </head>
+    <body>
+        <header
+            style="
+                position: sticky;
+                top: 0;
+                z-index: 999;
+                background-color: #fff;
+            "
+        >
+            <nav class="container">
+                <ul>
+                    <li><strong>EstefDev</strong></li>
+                </ul>
+                <ul>
+                    <li>
+                        <details class="dropdown">
+                            <summary>Menu</summary>
+                            <ul dir="rtl">
+                                <li><a href="#proyectos">Proyectos</a></li>
+                                <li><a href="#sobre-mi">Sobre mí</a></li>
+                                <li><a href="#contacto">Contacto</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="dropdown">
+                            <summary>Tema</summary>
+                            <ul dir="rtl">
+                                <li><a id="theme-light">Claro</a></li>
+                                <li><a id="theme-dark">Oscuro</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section
+                style="display: flex; justify-content: center; height: 100dvh"
+            >
+                <div style="align-self: center">
+                    <div class="grid">
+                        <div>
+                            <hgroup>
+                                <h1>Estefan</h1>
+                                <h2>Programador Junior</h2>
+                                <p>
+                                    Emocionado por expandir mis conocimientos y
+                                    por empezar a trabajar en proyectos
+                                    interesantes.
+                                </p>
+                                <hr />
+                                <a
+                                    role="button"
+                                    href="https://github.com/EstefSpace"
+                                    style="color: white"
+                                    data-tooltip="Mi GitHub"
+                                    data-placement="bottom"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><i class="fa-brands fa-github"></i>
+                                    <b>GitHub</b></a
+                                >
+                            </hgroup>
+                        </div>
+                        <div
+                            style="
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            "
+                        >
+                            <img
+                                src="assets/favicon.png"
+                                style="
+                                    border-radius: 50%;
+                                    width: 300px;
+                                    height: 300px;
+                                "
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="proyectos">
+                <hgroup>
+                    <h2>Proyectos</h2>
+                    <p>Descubre mis proyectos más relevantes.</p>
+                </hgroup>
+                <hr />
+
+                <div class="grid">
+                    <article>
+                        <header>
+                            <h3>Manager Bot</h3>
+                            <b style="font-size: 32px"
+                                ><a class="contrast" data-tooltip="Node.js"
+                                    ><i class="fa-brands fa-node-js"></i
+                                ></a>
+                                <a
+                                    style="color: #e7cf05"
+                                    class="contrast"
+                                    data-tooltip="JavaScript"
+                                    ><i class="fa-brands fa-js"></i
+                                ></a>
+                                <a style="color: #61d605" class="contrast" data-tooltip="MongoDB"
+                                    ><i class="fa-solid fa-database"></i></a
+st                            ></b>
+                        </header>
+                        <p>
+                            Un bot de Discord que maneja un servidor que vende
+                            Servicios de Desarrollo Web. El bot es capaz de
+                            crear pedidos, revisar el estado de ellos y
+                            finalizarlos. Esta hecho con la libreria de
+                            <strong>discord.js</strong>.
+                        </p>
+
+                        <small>Foto de cuando crea un pedido.</small>
+                        <hr />
+                        <img
+                            style="border-radius: 10px"
+                            src="assets/preview_managerBot.png"
+                            alt="Preview del proyecto"
+                            title="Creación de un pedido."
+                        />
+                        <footer>
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://estefdev.info/Saturno-Tech"
+                                role="button"
+                                style="color: white"
+                                ><i class="fa-solid fa-eye"></i> Preview</a
+                            >
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                role="button"
+                                style="color: white"
+
+                                disabled
+                                ><i class="fa-brands fa-github"></i> Codigo
+                                Privado</a
+                            >
+                        </footer>
+                    </article>
+
+                    <article>
+                        <header>
+                            <h3>Minimalist New Tab</h3>
+                            <b style="font-size: 32px"
+                                ><a style="color: #ec6c08" class="contrast" data-tooltip="HTML"
+                                    ><i class="fa-brands fa-html5"></i
+                                ></a>
+                                <a style="color: #0875d6" class="contrast" data-tooltip="CSS"
+                                    ><i class="fa-brands fa-css3"></i
+                                ></a>
+                                <a
+                                    style="color: #e7cf05"
+                                    class="contrast"
+                                    data-tooltip="JavaScript"
+                                    ><i class="fa-brands fa-js"></i></a
+                            ></b>
+                        </header>
+                        <p>
+                            Una extension de Chrome que reemplaza la nueva
+                            pestaña preterminada del navegador, por una más
+                            minimalista y linda.
+                        </p>
+
+                        <small>Una vista de esta extension de Chrome</small>
+                        <hr />
+                        <img
+                            style="border-radius: 10px"
+                            src="assets/preview_extensionChrome.png"
+                            alt="Foto de la extension"
+                            title="¡Que gran extension!"
+                        />
+                        <footer>
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://estefspace.github.io/Minimalist-New-Tab/new_tab.html"
+                                role="button"
+                                style="color: white"
+                                ><i class="fa-solid fa-eye"></i> Preview</a
+                            >
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://github.com/EstefSpace/Minimalist-New-Tab"
+                                role="button"
+                                style="color: white"
+                            >
+                                <i class="fa-brands fa-github"></i> Codigo
+                                Abierto</a
+                            >
+                        </footer>
+                    </article>
+                </div>
+
+                <article>
+                    <header>
+                        <h3>Gemini-Go</h3>
+                        <b style="font-size: 32px"
+                            ><a style="color: #0875d6" class="contrast" data-tooltip="Golang"
+                                ><i class="fa-brands fa-golang"></i></a
+                        ></b>
+                    </header>
+                    <p>
+                        Un paquete de Golang que facilita la interacción con la
+                        API de Gemini. Es muy facil de usar, unicamente se
+                        requiere de una API_KEY
+                    </p>
+
+                    <small>Un ejemplo de su uso en un proyecto.</small>
+                    <hr />
+                    <img
+                        src="assets/images/extension_chrome.webp"
+                        alt="Foto de su uso"
+                        title="La IA me da miedo"
+                    />
+                    <footer>
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            role="button"
+                            disabled
+                            style="color: white"
+                            ><i class="fa-solid fa-eye"></i> Preview</a
+                        >
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://github.com/EstefSpace/gemini-go"
+                            role="button"
+
+                            style="color: white"
+                        >
+                            <i class="fa-brands fa-github"></i> Codigo
+                            Abierto</a
+                        >
+                    </footer>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
