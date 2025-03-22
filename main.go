@@ -15,5 +15,5 @@ func InitWeb() {
 			"title": "EstefDev - Programador Junior",
 		})
 	})
-	router.Run("4321")
+	router.Run(":4321")
 }
