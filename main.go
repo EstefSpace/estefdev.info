@@ -1,4 +1,4 @@
-package main
+package api
 
 import (
 	"net/http"
@@ -6,7 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func main() {
+func InitWeb() {
 	router := gin.Default()
 	router.LoadHTMLGlob("pages/*")
 	router.Static("/assets", "./assets/")
